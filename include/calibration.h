@@ -2,7 +2,7 @@
 *
 *  MIT License
 *
-*  Copyright (c) 2023 awawa-dev
+*  Copyright (c) 2021-2026 awawa-dev
 *
 *  https://github.com/awawa-dev/HyperSPI
 *
@@ -27,6 +27,8 @@
 
 #ifdef NEOPIXEL_RGBW
 	typedef RgbwColor ColorDefinition;
+#elif defined(SPILED_APA102)
+	typedef DotStarColor ColorDefinition;
 #else
 	typedef RgbColor ColorDefinition;
 #endif
